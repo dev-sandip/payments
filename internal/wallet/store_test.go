@@ -6,7 +6,7 @@ import (
 	"testing"
 
 	"github.com/dev-sandip/payments/internal/wallet"
-	postgres "github.com/dev-sandip/payments/internal/wallet/platform"
+	"github.com/dev-sandip/payments/internal/wallet/platform/postgres"
 	"github.com/google/uuid"
 	"github.com/jackc/pgx/v5/pgconn"
 )
