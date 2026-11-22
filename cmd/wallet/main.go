@@ -10,7 +10,7 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/dev-sandip/payments/internal/wallet/platform/postgres"
+	"github.com/dev-sandip/payments/internal/platform/postgres"
 )
 
 func main() {

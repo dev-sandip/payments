@@ -5,10 +5,11 @@ import (
 	"os"
 	"testing"
 
-	"github.com/dev-sandip/payments/internal/wallet"
-	"github.com/dev-sandip/payments/internal/wallet/platform/postgres"
 	"github.com/google/uuid"
 	"github.com/jackc/pgx/v5/pgconn"
+
+	"github.com/dev-sandip/payments/internal/platform/postgres"
+	"github.com/dev-sandip/payments/internal/wallet"
 )
 
 // newStore connects to the database in WALLET_TEST_DATABASE_URL. Without it the
