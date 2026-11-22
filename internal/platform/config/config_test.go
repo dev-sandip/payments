@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/dev-sandip/payments/internal/wallet/config"
+	"github.com/dev-sandip/payments/internal/platform/config"
 )
 
 func TestEnvReportsEveryProblem(t *testing.T) {
