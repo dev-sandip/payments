@@ -8,6 +8,7 @@ import (
 	"github.com/google/uuid"
 )
 
+// Posting is one line of a transaction: money in or out of one account.
 type Posting struct {
 	AccountID uuid.UUID
 	Direction Direction
@@ -15,11 +16,13 @@ type Posting struct {
 	Currency  string
 }
 
+// NewTransaction is a transaction we want to record.
 type NewTransaction struct {
 	Description string
 	Postings    []Posting
 }
 
+// Transaction is a posted journal entry, together with its entries.
 type Transaction struct {
 	walletdb.Transaction
 	Entries []Entry `json:"entries"`
