@@ -106,7 +106,7 @@ func (s *Service) Deposit(ctx context.Context, walletID uuid.UUID, amount Money)
 		return Transaction{}, err
 	}
 	// The client must say which currency it means, so 500 can never quietly
-	// become 500 yen in a dollar wallet.
+	// become 500 npr in a dollar wallet.
 	if amount.Currency != w.Currency {
 		v.Add("currency", "must match the wallet's currency, "+w.Currency)
 	}
